@@ -11,7 +11,7 @@
           img(src="../assets/logdabesare.png" width="230px" v-if="area.area == 'dabesare'")
           img(src="../assets/logvaal.jpg" width="250px" v-if="area.area == 'vaal'")
       .col-md-4
-        .busca(v-if="$parent.busca == true")
+        .busca(v-if="$parent.busca == true" @click="$parent.forvista = 'buscar'")
           span.fa.fa-search.fa-2x.verde
 </template>
 <script>

@@ -1,0 +1,3 @@
+const busAct = {
+    activo:'formatos'
+}

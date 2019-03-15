@@ -1,11 +1,17 @@
 <template lang="pug">
     .tablaReporte
         menus
-        .menudespliega.navactivo
+        .menudespliega.navactivo(v-if="impresion == true")
             .abajo
+                a(href="#" class="text-center" @click="corrige")
+                    span.fa.fa-edit.verde.fa-3x <br>
+                    strong.verde Corregir <br> Información
+                a(href="#" class="text-center" @click="imprime")
+                    span.fa.fa-print.verde.fa-3x <br>
+                    strong.verde Imprimir
                 a(href="#" class="text-center" onclick="tableToExcel('tablacontenido', 'Reporte de Entrega de Efectivo')")
-                    span.fa.fa-file-excel.verde.fa-3x <br>
-                    strong.verde Excel
+                    span.fa.fa-file-excel.verde.fa-3x 
+                    strong.verde <br>Excel
                 //- button.btn.btn-warning(onclick="") Excel
         .container.m-20#tablacontenido
             table.table.table-bordered(style="text-aling:center;")
@@ -175,16 +181,26 @@ export default {
     data(){
         return{
             datos:[],
+            impresion:true,
         }
     },
     methods:{
-
+        imprime(){
+            this.impresion=false
+            setTimeout(() => {
+                window.print();
+                this.impresion=true
+            }, 1000);
+        },
+        corrige(){
+            location.href = "#/reporte";
+        }
     },
     mounted(){
          var settings = {
         async: true,
         crossDomain: true,
-        url: "http://localhost:3000/ECheque",
+        url: "http://localhost:3000/EEfectivo",
         method: "GET",
         headers: {
             "Content-Type": "application/json",

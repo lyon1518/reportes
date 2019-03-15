@@ -7,10 +7,10 @@
 </template>
 
 <script>
-import lista from "./listaFormatos";
-import menus from "./permanente/menus";
-import logo from "./logos";
-import accion from "./acciones";
+import lista from "./listaFormatos"
+import menus from "./permanente/menus"
+import logo from "./logos"
+import accion from "./acciones"
 export default {
   name: "Inicio",
   components: {
@@ -28,13 +28,24 @@ export default {
       acciones:false,
       vista:'',
       busca:false,
-    };
+    }
   },
   mounted() {
+
+    // $.ajax({
+    //   crossDomain: true,
+    //   method: 'get',
+    //   url: `${process.env.API_ROOT}Inicio/mensaje.htm`,
+    //   success: (res)=>{
+    //     console.log(res)
+    //   }
+    // })
+
+
     var settings = {
       async: true,
       crossDomain: true,
-      url: "http://localhost:3000/SA",
+      url: "http://localhost:3000/lof",
       method: "GET",
       headers: {
         "Content-Type": "application/json",

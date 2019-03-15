@@ -34,9 +34,11 @@
             RCEE(v-if="forvista == 'RCliente'")
             RM(v-if="forvista == 'RMensajero'")
             LFEE(v-if="forvista == 'LFEEfectivo'")
+            BUSCA(v-if="forvista == 'buscar'")
 </template>
 <script>
 import LFEE from "./formLFEE";
+import BUSCA from "./buscador";
 import RCEE from "./formRCEE";
 import RM from "./formRM";
 import menus from "./permanente/menus";
@@ -49,7 +51,8 @@ export default {
         RM,
         RCEE,
         menus,
-        logo
+        logo,
+        BUSCA
     },
     data(){
         return{

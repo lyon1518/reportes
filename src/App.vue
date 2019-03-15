@@ -29,11 +29,22 @@ export default {
 <style lang="scss">
 @import 'node_modules/bootstrap/scss/bootstrap';
 
+@font-face{
+   font-family: OpenSans;
+   src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face{
+   font-family: OpenSansBold;
+   src: url(../fonts/OpenSans-Bold.ttf);
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: OpenSans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+strong{
+  font-family: OpenSansBold;
 }
 </style>

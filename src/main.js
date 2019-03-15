@@ -6,7 +6,7 @@ import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSignOutAlt,faUser,faUserTie,faBuilding,faFileArchive,faFile,faFileAlt,faFileInvoiceDollar,faFileContract,faAngleRight,
 faPlusCircle,faBox,faAddressCard,faAddressBook,faMapMarkedAlt,faMapMarker,faPallet,faBoxOpen,faListOl,faSearch
-,faFileExcel } from '@fortawesome/free-solid-svg-icons'
+,faFileExcel,faPrint,faEdit, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueSession from 'vue-session'
 
@@ -14,7 +14,7 @@ Vue.use(VueSession)
 
 library.add(faSignOutAlt,faUser,faUserTie,faBuilding,faFileArchive,faFile,faFileAlt,faFileInvoiceDollar, faFileContract,faAngleRight,
 faPlusCircle,faBox,faAddressCard,faAddressBook,faMapMarkedAlt,faMapMarker,faPallet,faBoxOpen,faListOl,faSearch
-,faFileExcel)
+,faFileExcel,faPrint,faEdit, faUserCircle)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

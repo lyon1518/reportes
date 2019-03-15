@@ -41,6 +41,20 @@ serve.get("/ECheque", (req, res)=>{
     cliente:'prueba cliente',domicilio:'domicilio de prueba',NQRecibe:'Jose',monto:'5000',cantidad:'5000',
     cantidadL:'cinco mil',gerente:'Héctor', recibe:'Paco Timulo',noCheque:'01',banco:'Banorte (inbursa)',formatoArea:'SERVICIOS ADMINISTRATIVOS',tipo:'cheque' })
 })
+serve.get("/clientes", (req, res)=>{
+    res.jsonp([
+        { nombre:'Héctor Edaurdo Gozalez Luna', domicilio:'domicilio de prueba numero 1'},
+        { nombre:'Fernando Ivan Ugalde Flores', domicilio:'domicilio de prueba numero 2'},
+        { nombre:'Gerardo Alexis Escorza Ibarra', domicilio:'domicilio de prueba numero 3'}
+    ])
+})
+serve.get("/mensajeros", (req, res)=>{
+    res.jsonp([
+        { nombre:'Cesar Omar Alcarzar Mendez', area:'area de prueba numero 1', noEmpleado:'1001'},
+        { nombre:'Ana Laura Torres', area:'area de prueba numero 2', noEmpleado:'1002'},
+        { nombre:'Angel Fernando Hernadez', area:'area de prueba numero 3', noEmpleado:'1003'}]
+        )
+})
 serve.listen(3000, ()=>{
     console.log("el servidor esta corriendo");
 })
