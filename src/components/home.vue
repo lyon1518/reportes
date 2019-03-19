@@ -74,7 +74,7 @@ export default {
 @import "node_modules/bootstrap/scss/bootstrap";
 .inicio {
     width: 100%;
-    height: 625px !important;
+    height: 100%;
 }
 .fondoBody {
     width: 100%;
