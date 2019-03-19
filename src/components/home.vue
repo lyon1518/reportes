@@ -1,53 +1,54 @@
 <template lang="pug">
     transition(name="component-fade" mode="out-in")
-      .inicio.fondoBody
-        .degradado
-            menus
-            .row.mt-20(style="width:100%;")
-                .col-md-2
-                    img(src="../assets/logSA.png" width="60%")
-                .col-md-8
-                    h3.linea.text-left
-                        
-                        strong.titulossss.gris Formatos 
-                .col-md-2
-            .row.mt-80(style="width:100%;margin:0px;")
-                .col-md-2
-                .col-md-8
-                    .row(style="width:100%;margin:0px;")
-                        .col-md-12
-                            .row(style="width:100%;margin:0px;")
-                                .col-md-2.lineadere.margenes.ml-20
-                                    .row.lineaverde(style="width:100%;margin:0px;")
-                                        .col-md-6.col-xs-6
-                                            span.fa.fa-file.crece
-                                        .col-md-6.col-xs-6.vertical
-                                            strong.testo Entradas y Salidas de Efectivo
-                                .col-md-2.lineadere.margenes
-                                    .row.lineaverde(style="width:100%;margin:0px;")
-                                        .col-md-6.col-xs-6
-                                            span.fa.fa-file.crece
-                                        .col-md-6.col-xs-6.vertical
-                                            strong.testo Entrega de Efectivo
-                                .col-md-2.lineadere.margenes
-                                    .row.lineaverde(style="width:100%;margin:0px;")
-                                        .col-md-6.col-xs-6
-                                            span.fa.fa-file.crece
-                                        .col-md-6.col-xs-6.vertical
-                                            strong.testo Acuse de Entrega Cliente
-                                .col-md-2.lineadere.margenes.sinpa.pr-20
-                                    .row.lineaverde(style="width:100%;margin:0px;")
-                                        .col-md-6.col-xs-6.sinpa
-                                            span.fa.fa-file.crece
-                                        .col-md-6.col-xs-6.vertical.sinpa
-                                            strong.testo Solicitud de Recursos sin comprobante
-                                .col-md-2.lineadere.margenes
-                                    .row.lineaverde(style="width:100%;margin:0px;")
-                                        .col-md-6.col-xs-6
-                                            span.fa.fa-file.crece
-                                        .col-md-6.col-xs-6.vertical
-                                            strong.testo Gastos Fondo Fijo
-                .col-md-2
+      .inicio
+        .fondoBody
+            .degradado
+                menus
+                .row.mt-20(style="width:100%;")
+                    .col-md-2
+                        img(src="../assets/logSA.png" width="60%")
+                    .col-md-8
+                        h3.linea.text-left
+                            
+                            strong.titulossss.gris Formatos 
+                    .col-md-2
+                .row.mt-80(style="width:100%;margin:0px;")
+                    .col-md-2
+                    .col-md-8
+                        .row(style="width:100%;margin:0px;")
+                            .col-md-12
+                                .row(style="width:100%;margin:0px;")
+                                    .col-md-2.lineadere.margenes.ml-20
+                                        .row.lineaverde(style="width:100%;margin:0px;")
+                                            .col-md-6.col-xs-6
+                                                span.fa.fa-file.crece
+                                            .col-md-6.col-xs-6.vertical
+                                                strong.testo Entradas y Salidas de Efectivo
+                                    .col-md-2.lineadere.margenes
+                                        .row.lineaverde(style="width:100%;margin:0px;")
+                                            .col-md-6.col-xs-6
+                                                span.fa.fa-file.crece
+                                            .col-md-6.col-xs-6.vertical
+                                                strong.testo Entrega de Efectivo
+                                    .col-md-2.lineadere.margenes
+                                        .row.lineaverde(style="width:100%;margin:0px;")
+                                            .col-md-6.col-xs-6
+                                                span.fa.fa-file.crece
+                                            .col-md-6.col-xs-6.vertical
+                                                strong.testo Acuse de Entrega Cliente
+                                    .col-md-2.lineadere.margenes.sinpa.pr-20
+                                        .row.lineaverde(style="width:100%;margin:0px;")
+                                            .col-md-6.col-xs-6.sinpa
+                                                span.fa.fa-file.crece
+                                            .col-md-6.col-xs-6.vertical.sinpa
+                                                strong.testo Solicitud de Recursos sin comprobante
+                                    .col-md-2.lineadere.margenes
+                                        .row.lineaverde(style="width:100%;margin:0px;")
+                                            .col-md-6.col-xs-6
+                                                span.fa.fa-file.crece
+                                            .col-md-6.col-xs-6.vertical
+                                                strong.testo Gastos Fondo Fijo
+                    .col-md-2
 </template>
 
 <script>
